@@ -1,14 +1,30 @@
-
-"""Format deadline/corrigendum alerts. Delivery integrations can be added later."""
+"""Notification payload builder; delivery is intentionally adapter-based."""
 from __future__ import annotations
 from typing import Any
 
+class NotificationService:
+    def build_change_notifications(self, change_report: dict[str, Any]) -> list[dict[str, Any]]:
+        notifications = []
+        for change in change_report.get("changes", []):
+            severity = str(change.get("severity", "LOW")).upper()
+            if severity not in {"HIGH", "MEDIUM"}:
+                continue
+            notifications.append({
+                "event": "TENDER_CHANGE",
+                "tender_id": change_report.get("tender_id", "UNKNOWN"),
+                "severity": severity,
+                "title": f"{severity}: tender field changed — {change.get('field', 'unknown')}",
+                "message": f"{change.get('field')} changed from {change.get('previous_value')} to {change.get('current_value')}.",
+                "requires_delivery_adapter": True,
+            })
+        return notifications
 
-def format_tender_alert(change_result: dict[str, Any]) -> str | None:
-    if not change_result.get("has_changes"):
-        return None
-    tender_id = change_result.get("tender_id", "Unknown tender")
-    lines = [f"BidPilot alert — {tender_id}"]
-    lines.extend(f"- {message}" for message in change_result.get("alert_messages", []))
-    lines.append("Action: review the official tender notice/corrigendum before relying on this update.")
-    return "\n".join(lines)
+    def build_deadline_notification(self, tender_id: str, deadline: str, days_remaining: int) -> dict[str, Any]:
+        urgency = "HIGH" if days_remaining <= 2 else ("MEDIUM" if days_remaining <= 7 else "LOW")
+        return {
+            "event": "DEADLINE_REMINDER", "tender_id": tender_id, "deadline": deadline,
+            "days_remaining": days_remaining, "severity": urgency,
+            "title": f"Tender deadline in {days_remaining} day(s)",
+            "requires_delivery_adapter": True,
+            "message": "Verify the official deadline and time zone before relying on this reminder.",
+        }

@@ -1,111 +1,73 @@
-
-"""Bid Analysis Agent: combines eligibility and compliance into a transparent score."""
+"""Transparent bid analysis that preserves the original Member 3 API."""
 from __future__ import annotations
 from typing import Any
 
-
 class BidAnalysisAgent:
-    """Build a weighted decision-support assessment from Member 2's agent outputs.
-
-    The weights are configurable and the score is not a probability of winning.
-    UNKNOWN eligibility checks reduce confidence and trigger review, rather than
-    being treated as failures.
-    """
-
-    def __init__(self, eligibility_weight: float = 0.65, document_weight: float = 0.35):
-        if eligibility_weight < 0 or document_weight < 0:
-            raise ValueError("Weights cannot be negative.")
-        if eligibility_weight + document_weight <= 0:
-            raise ValueError("At least one weight must be positive.")
-        total = eligibility_weight + document_weight
-        self.eligibility_weight = eligibility_weight / total
-        self.document_weight = document_weight / total
-
-    def analyze(
-        self,
-        eligibility_result: dict[str, Any],
-        compliance_result: dict[str, Any],
-        tender: dict[str, Any] | None = None,
-    ) -> dict[str, Any]:
-        eligibility_score = eligibility_result.get("eligibility_score")
-        document_score = compliance_result.get("document_readiness_score")
-
-        components = []
-        if eligibility_score is not None:
-            components.append((float(eligibility_score), self.eligibility_weight))
-        if document_score is not None:
-            components.append((float(document_score), self.document_weight))
-
-        if components:
-            effective_weight = sum(weight for _, weight in components)
-            overall = round(sum(score * weight for score, weight in components) / effective_weight, 1)
-        else:
-            overall = None
-
+    def analyze(self, eligibility_result: dict[str, Any], compliance_result: dict[str, Any],
+                tender: dict[str, Any] | None = None,
+                change_report: dict[str, Any] | None = None) -> dict[str, Any]:
+        tender = tender or {}
+        strengths, risks, actions, evidence = [], [], [], []
+        for check in eligibility_result.get("checks", []) or []:
+            status = str(check.get("status", "UNKNOWN")).upper()
+            label = str(check.get("requirement", check.get("key", "Requirement")))
+            if status == "PASS": strengths.append(f"{label} passed.")
+            elif status == "FAIL":
+                risks.append(f"Potential eligibility gap: {label}.")
+                actions.append({"priority": "HIGH", "action": check.get("explanation", f"Review {label}.")})
+            else:
+                risks.append(f"Unverified criterion: {label}.")
+                actions.append({"priority": "MEDIUM", "action": check.get("explanation", f"Verify {label}.")})
+            if check.get("evidence"):
+                evidence.append({"type": "eligibility", "field": label, "source_evidence": check["evidence"]})
         failed = eligibility_result.get("failed_checks", []) or []
         unknown = eligibility_result.get("unknown_checks", []) or []
-        checklist = compliance_result.get("checklist", []) or []
-        missing_docs = [
-            item.get("required_document", "Unnamed document")
-            for item in checklist if item.get("status") == "MISSING"
-        ]
-
-        if failed or missing_docs:
-            recommendation = "ACTION_REQUIRED"
-        elif unknown:
-            recommendation = "NEEDS_HUMAN_REVIEW"
-        elif overall is not None and overall >= 80:
-            recommendation = "STRONG_CANDIDATE"
-        elif overall is not None:
-            recommendation = "REVIEW_BEFORE_BIDDING"
-        else:
-            recommendation = "INSUFFICIENT_DATA"
-
-        strengths = [
-            f'{item.get("requirement", item.get("key", "Requirement"))} passed.'
-            for item in eligibility_result.get("checks", []) or []
-            if item.get("status") == "PASS"
-        ]
-        risks = [
-            f'{item.get("requirement", item.get("key", "Requirement"))}: {item.get("explanation", "Needs review")}'
-            for item in failed + unknown
-        ]
-        risks.extend(f"Required document missing: {name}" for name in missing_docs)
-
+        missing_docs = [x.get("required_document", "Unnamed document")
+                        for x in compliance_result.get("checklist", []) or [] if x.get("status") == "MISSING"]
+        for item in compliance_result.get("checklist", []) or []:
+            label = str(item.get("required_document", "Required document"))
+            status = str(item.get("status", "MISSING")).upper()
+            if status == "MISSING":
+                risks.append(f"Required document missing: {label}")
+                actions.append({"priority": "HIGH", "action": item.get("action", f"Obtain {label}.")})
+            elif status not in {"AVAILABLE_MARKED_VALID", "AVAILABLE"}:
+                risks.append(f"Document needs verification: {label}")
+                actions.append({"priority": "MEDIUM", "action": item.get("action", f"Verify {label}.")})
+            else:
+                strengths.append(f"Document inventory lists: {label}.")
+        if change_report:
+            for change in change_report.get("changes", []):
+                sev = str(change.get("severity", "LOW")).upper()
+                if sev in {"HIGH", "MEDIUM"}:
+                    risks.append(f"Tender field '{change.get('field')}' changed.")
+                    actions.append({"priority": sev, "action": "Review the changed tender clause and update the bid checklist."})
+        score = eligibility_result.get("eligibility_score")
+        doc_score = compliance_result.get("document_readiness_score")
+        components = []
+        if score is not None: components.append((float(score), .65))
+        if doc_score is not None: components.append((float(doc_score), .35))
+        overall = round(sum(s*w for s,w in components) / sum(w for _,w in components), 1) if components else None
+        if failed or missing_docs: recommendation = "ACTION_REQUIRED"
+        elif unknown: recommendation = "NEEDS_HUMAN_REVIEW"
+        elif overall is not None and overall >= 80: recommendation = "STRONG_CANDIDATE"
+        elif overall is not None: recommendation = "REVIEW_BEFORE_BIDDING"
+        else: recommendation = "INSUFFICIENT_DATA"
+        readiness = ("POTENTIAL_ELIGIBILITY_GAPS" if failed else
+                     "NOT_READY_OR_REVIEW_REQUIRED" if missing_docs or unknown else
+                     "REVIEW_CHANGES_BEFORE_SUBMISSION" if change_report and change_report.get("high_priority_count", 0) else
+                     "READY_FOR_HUMAN_REVIEW")
         return {
-            "tender_id": (tender or {}).get("tender_id") or eligibility_result.get("tender_id"),
-            "tender_title": (tender or {}).get("title", "Untitled tender"),
+            "tender_id": tender.get("tender_id") or eligibility_result.get("tender_id"),
+            "tender_title": tender.get("title", "Untitled tender"),
             "company_name": eligibility_result.get("company_name") or compliance_result.get("company_name", "Company"),
-            "eligibility_score": eligibility_score,
-            "document_readiness_score": document_score,
-            "overall_score": overall,
-            "recommendation": recommendation,
-            "strengths": strengths,
-            "risks": risks,
-            "missing_documents": missing_docs,
-            "unknown_eligibility_checks": unknown,
-            "deadline": (tender or {}).get("deadline"),
+            "eligibility_score": score, "document_readiness_score": doc_score, "overall_score": overall,
+            "recommendation": recommendation, "readiness_status": readiness,
+            "strengths": strengths, "risks": risks, "action_items": actions,
+            "missing_documents": missing_docs, "unknown_eligibility_checks": unknown,
+            "deadline": tender.get("deadline"), "evidence": evidence,
             "human_review_required": True,
+            "assumptions": ["Analysis is based only on supplied reports and snapshots.",
+                "Document inventory status does not establish authenticity or tender acceptance.",
+                "A human reviewer must validate the original tender and all applicable corrigenda."],
             "score_note": "Weighted readiness indicator, not a probability of winning or a legal eligibility determination.",
         }
-
-
-if __name__ == "__main__":
-    import json
-    eligibility = {
-        "company_name": "Demo IT Solutions", "tender_id": "BP-2026-001",
-        "eligibility_score": 100.0, "outcome": "MEETS_CHECKED_CRITERIA",
-        "checks": [{"requirement": "Turnover", "status": "PASS"}],
-        "failed_checks": [], "unknown_checks": [],
-    }
-    compliance = {
-        "company_name": "Demo IT Solutions", "document_readiness_score": 75.0,
-        "missing_count": 1, "checklist": [
-            {"required_document": "PAN card", "status": "AVAILABLE"},
-            {"required_document": "OEM authorization", "status": "MISSING"},
-        ],
-    }
-    print(json.dumps(BidAnalysisAgent().analyze(eligibility, compliance, {
-        "tender_id": "BP-2026-001", "title": "Supply of Computer Equipment",
-        "deadline": "2026-11-05"
-    }), indent=2))
