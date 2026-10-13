@@ -4,7 +4,7 @@
 This module covers:
 1. **Tender Discovery Agent** — ranks tenders from a local/sample tender catalogue against a company profile.
 2. **Tender Requirement Extraction Agent** — extracts structured requirements from tender text or PDF files.
-3. **Source and document utilities** — loads sample tenders and extracts text from TXT/PDF documents.
+3. **Source and document utilities** — loads sample tenders and extracts text from TXT/Markdown/PDF/DOCX documents, with source metadata and extraction warnings.
 
 The module is intentionally runnable without paid APIs or credentials. The discovery source uses a local JSON catalogue for the mini-project demo; `scraper.py` contains a clear adapter point for connecting approved public tender sources later.
 
@@ -32,10 +32,13 @@ python -m backend.agents.discovery_agent
 python -m backend.agents.requirement_agent data/sample_tenders/tender_001.txt
 ```
 
-For a PDF:
+For a PDF or DOCX:
 ```bash
 python -m backend.agents.requirement_agent path/to/tender.pdf
+python -m backend.agents.requirement_agent path/to/tender.docx --output outputs/requirements.json
 ```
+
+The output retains the original readable fields and adds `normalized_requirements` for INR amounts, experience in months, and ISO dates. It also records evidence snippets, a source-file hash, extraction warnings, and `review_required: true`. Scanned PDFs need OCR; selectable-text extraction alone cannot read page images.
 
 ## Run tests
 
@@ -60,3 +63,7 @@ Requirement extraction returns:
 - `warnings`: fields that need human verification
 
 The downstream eligibility/compliance agents should treat extracted values as **candidate facts**, not authoritative legal conclusions. Always retain the source text and ask a human to verify tender requirements before bidding.
+
+## Member 1 — Part 2
+
+See [`docs/member1_part2.md`](docs/member1_part2.md) for the expanded evidence-backed extraction schema, normalized fields, limitations, and integration guidance.
