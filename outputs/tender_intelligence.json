@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0",
+  "agent": "member1_tender_intelligence",
+  "catalogue_mode": "local_catalogue",
+  "company_profile_summary": {
+    "industry": "IT and computer equipment",
+    "location": "Maharashtra",
+    "keywords": [
+      "laptop",
+      "network",
+      "software",
+      "cybersecurity"
+    ]
+  },
+  "result_count": 4,
+  "results": [
+    {
+      "schema_version": "1.1",
+      "tender_id": "BP-2026-001",
+      "source_document": "tender_001.txt",
+      "eligibility": {
+        "minimum_turnover": "₹1 crore",
+        "minimum_experience": "3 years",
+        "location_requirement": "Maharashtra",
+        "other_conditions": [
+          "Bidders must have valid GST registration and PAN."
+        ]
+      },
+      "technical_requirements": [
+        "TENDER: Supply and Installation of Computer Equipment",
+        "Technical specifications:",
+        "Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD.",
+        "Networking equipment must support current industry standards.",
+        "Warranty: minimum 3 years onsite support.",
+        "experience certificate, OEM authorization, technical bid, financial bid.",
+        "Evaluation criteria: Technical compliance followed by financial evaluation."
+      ],
+      "financial_requirements": [
+        {
+          "type": "EMD",
+          "value": "₹50,000"
+        },
+        {
+          "type": "Tender fee",
+          "value": "₹2,000"
+        }
+      ],
+      "certifications": [
+        "GST",
+        "GST REGISTRATION",
+        "OEM AUTHORIZATION",
+        "PAN"
+      ],
+      "documents_required": [
+        "PAN card",
+        "GST certificate",
+        "Audited financial statements",
+        "Turnover certificate",
+        "Experience certificate",
+        "OEM authorization",
+        "Technical bid",
+        "Financial bid"
+      ],
+      "deadlines": {
+        "bid_submission_deadline": "05-Nov-2026"
+      },
+      "evaluation_criteria": "Technical compliance followed by financial evaluation",
+      "normalized_requirements": {
+        "minimum_annual_turnover_inr": 10000000,
+        "minimum_experience_months": 36,
+        "location_requirement": "Maharashtra",
+        "emd_inr": 50000,
+        "tender_fee_inr": 2000,
+        "bid_submission_deadline_iso": "2026-11-05",
+        "certifications": [
+          "GST",
+          "GST REGISTRATION",
+          "OEM AUTHORIZATION",
+          "PAN"
+        ],
+        "documents_required": [
+          "PAN card",
+          "GST certificate",
+          "Audited financial statements",
+          "Turnover certificate",
+          "Experience certificate",
+          "OEM authorization",
+          "Technical bid",
+          "Financial bid"
+        ]
+      },
+      "evidence": {
+        "minimum_turnover": [
+          "er ID: BP-2026-001 Organization: Sample State Procurement Department Location: Maharashtra Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minimum relevant experience of 3 years supplying compute",
+          "posit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-"
+        ],
+        "minimum_experience": [
+          "a Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minimum relevant experience of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and",
+          "Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteri"
+        ],
+        "location_requirement": [
+          "Supply and Installation of Computer Equipment Tender ID: BP-2026-001 Organization: Sample State Procurement Department Location: Maharashtra Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minim"
+        ],
+        "bid_submission_deadline": [
+          "tements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+        ],
+        "emd": [
+          "ing equipment must support current industry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turno",
+          "ort current industry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover c"
+        ],
+        "tender_fee": [
+          "ustry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience"
+        ],
+        "certifications": [
+          "relevant experience of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking e",
+          "upport. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical b"
+        ],
+        "documents_required": [
+          "anty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorizati",
+          "of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking equipment must support",
+          "s onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, t"
+        ],
+        "technical_requirements": [
+          "ears supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking equipment must support current ind",
+          "N card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financ",
+          "rtificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+        ],
+        "evaluation_criteria": [
+          "ficate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+        ]
+      },
+      "warnings": [
+        "Rule-based extraction is a screening aid and may miss tables, footnotes, exceptions, or requirements expressed indirectly.",
+        "Verify every extracted requirement against the original tender, annexures, and latest corrigenda before bidding."
+      ],
+      "review_required": true,
+      "source_metadata": {
+        "file_type": "txt",
+        "page_count": null,
+        "character_count": 961,
+        "sha256": "7592a6595f4926baf8d5bb2e29bc2335d5bfc1f0c1f8e075b2aa1db0fe7b7c61"
+      },
+      "discovery": {
+        "tender_id": "BP-2026-001",
+        "title": "Supply and Installation of Computer Equipment",
+        "organization": "Sample State Procurement Department",
+        "location": "Maharashtra",
+        "catalogue_deadline": "2026-11-05",
+        "estimated_value": 2500000,
+        "categories": [
+          "IT hardware",
+          "laptops",
+          "desktop computers",
+          "networking"
+        ],
+        "source_url": "https://example.gov.in/tenders/BP-2026-001",
+        "relevance_score": 63.6,
+        "matched_terms": [
+          "computer",
+          "equipment",
+          "hardware",
+          "it",
+          "maharashtra",
+          "networking",
+          "support"
+        ],
+        "discovery_note": "Matched terms: computer, equipment, hardware, it, maharashtra, networking, support"
+      },
+      "cross_checks": {
+        "catalogue_vs_document_deadline": {
+          "catalogue_deadline": "2026-11-05",
+          "document_deadline": "2026-11-05",
+          "status": "match"
+        }
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "tender_id": "BP-2026-004",
+      "source_document": "tender_004.txt",
+      "eligibility": {
+        "minimum_turnover": "₹1.5 crore",
+        "minimum_experience": "5 years",
+        "location_requirement": "Pune, Maharashtra",
+        "other_conditions": [
+          "Bidders should hold ISO 27001 certification or equivalent security certification."
+        ]
+      },
+      "technical_requirements": [
+        "TENDER: Cybersecurity Audit and Network Monitoring",
+        "Minimum relevant experience of 5 years in cybersecurity or network monitoring.",
+        "Technical specifications:",
+        "Conduct cybersecurity audit, vulnerability assessment, network monitoring and incident response support.",
+        "Submit a technical methodology and service delivery plan.",
+        "ISO certificate, technical bid and financial bid.",
+        "Evaluation criteria: Technical proposal scoring followed by financial evaluation."
+      ],
+      "financial_requirements": [
+        {
+          "type": "EMD",
+          "value": "₹75,000"
+        },
+        {
+          "type": "Tender fee",
+          "value": "₹3,000"
+        }
+      ],
+      "certifications": [
+        "GST",
+        "ISO 27001",
+        "PAN"
+      ],
+      "documents_required": [
+        "PAN card",
+        "GST certificate",
+        "Audited financial statements",
+        "Turnover certificate",
+        "Experience certificate",
+        "ISO certificate",
+        "Technical bid",
+        "Financial bid",
+        "Technical methodology",
+        "Service delivery plan"
+      ],
+      "deadlines": {
+        "bid_submission_deadline": "20-Nov-2026"
+      },
+      "evaluation_criteria": "Technical proposal scoring followed by financial evaluation",
+      "normalized_requirements": {
+        "minimum_annual_turnover_inr": 15000000,
+        "minimum_experience_months": 60,
+        "location_requirement": "Pune, Maharashtra",
+        "emd_inr": 75000,
+        "tender_fee_inr": 3000,
+        "bid_submission_deadline_iso": "2026-11-20",
+        "certifications": [
+          "GST",
+          "ISO 27001",
+          "PAN"
+        ],
+        "documents_required": [
+          "PAN card",
+          "GST certificate",
+          "Audited financial statements",
+          "Turnover certificate",
+          "Experience certificate",
+          "ISO certificate",
+          "Technical bid",
+          "Financial bid",
+          "Technical methodology",
+          "Service delivery plan"
+        ]
+      },
+      "evidence": {
+        "minimum_turnover": [
+          "026-004 Organization: Sample Public Sector Institution Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹1.5 crore. Minimum relevant experience of 5 years in cybersecurity or network monitoring. Bidders should hold ISO 2",
+          "itions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov"
+        ],
+        "minimum_experience": [
+          "r Institution Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹1.5 crore. Minimum relevant experience of 5 years in cybersecurity or network monitoring. Bidders should hold ISO 27001 certification or equivalent security c",
+          "Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov-2026. Evaluation criter"
+        ],
+        "location_requirement": [
+          "ENDER: Cybersecurity Audit and Network Monitoring Tender ID: BP-2026-004 Organization: Sample Public Sector Institution Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹1.5 crore. Minimum relevant experience of 5 years in cyber"
+        ],
+        "bid_submission_deadline": [
+          "ements, turnover certificate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov-2026. Evaluation criteria: Technical proposal scoring followed by financial evaluation."
+        ],
+        "emd": [
+          "itoring and incident response support. Submit a technical methodology and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover ce"
+        ],
+        "tender_fee": [
+          "cident response support. Submit a technical methodology and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience"
+        ],
+        "certifications": [
+          "nover of ₹1.5 crore. Minimum relevant experience of 5 years in cybersecurity or network monitoring. Bidders should hold ISO 27001 certification or equivalent security certification. Technical specifications: Conduct cybersecurity audit, vulne",
+          "uments required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov-2026. Evaluation criteria: Technical pro",
+          "1.5 crore. Minimum relevant experience of 5 years in cybersecurity or network monitoring. Bidders should hold ISO 27001 certification or equivalent security certification. Technical specifications: Conduct cybersecurity audit, vulnerability assessment,"
+        ],
+        "documents_required": [
+          "rt. Submit a technical methodology and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate",
+          "al methodology and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, tec",
+          "and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, technical bid and financi"
+        ],
+        "technical_requirements": [
+          "cybersecurity or network monitoring. Bidders should hold ISO 27001 certification or equivalent security certification. Technical specifications: Conduct cybersecurity audit, vulnerability assessment, network monitoring and incident response support",
+          "ions: Conduct cybersecurity audit, vulnerability assessment, network monitoring and incident response support. Submit a technical methodology and service delivery plan. Financial conditions: EMD: ₹75,000. Tender fee: ₹3,000. Documents required: PA",
+          "PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov-2026. Evaluation criteria: Technical proposal scoring followed"
+        ],
+        "evaluation_criteria": [
+          "icate, experience certificate, ISO certificate, technical bid and financial bid. Bid submission deadline: 20-Nov-2026. Evaluation criteria: Technical proposal scoring followed by financial evaluation."
+        ]
+      },
+      "warnings": [
+        "Rule-based extraction is a screening aid and may miss tables, footnotes, exceptions, or requirements expressed indirectly.",
+        "Verify every extracted requirement against the original tender, annexures, and latest corrigenda before bidding."
+      ],
+      "review_required": true,
+      "source_metadata": {
+        "file_type": "txt",
+        "page_count": null,
+        "character_count": 913,
+        "sha256": "e7aad8361737fd92845cc714a2cec316feedc9fb487af0ae93e16b59146910b8"
+      },
+      "discovery": {
+        "tender_id": "BP-2026-004",
+        "title": "Cybersecurity Audit and Network Monitoring",
+        "organization": "Sample Public Sector Institution",
+        "location": "Pune, Maharashtra",
+        "catalogue_deadline": "2026-11-20",
+        "estimated_value": 3200000,
+        "categories": [
+          "cybersecurity",
+          "networking",
+          "IT services"
+        ],
+        "source_url": "https://example.gov.in/tenders/BP-2026-004",
+        "relevance_score": 54.5,
+        "matched_terms": [
+          "cybersecurity",
+          "it",
+          "maharashtra",
+          "network",
+          "networking",
+          "support"
+        ],
+        "discovery_note": "Matched terms: cybersecurity, it, maharashtra, network, networking, support"
+      },
+      "cross_checks": {
+        "catalogue_vs_document_deadline": {
+          "catalogue_deadline": "2026-11-20",
+          "document_deadline": "2026-11-20",
+          "status": "match"
+        }
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "tender_id": "BP-2026-002",
+      "source_document": "tender_002.txt",
+      "eligibility": {
+        "minimum_turnover": "₹50 lakh",
+        "minimum_experience": "2 years",
+        "location_requirement": "Pune, Maharashtra",
+        "other_conditions": [
+          "Valid GST registration is required."
+        ]
+      },
+      "technical_requirements": [
+        "Technical specifications:",
+        "Provide website maintenance, software development, cybersecurity updates and technical support.",
+        "The service provider must meet agreed response-time standards.",
+        "PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid.",
+        "Evaluation criteria: Technical evaluation and financial bid comparison."
+      ],
+      "financial_requirements": [
+        {
+          "type": "EMD",
+          "value": "₹25,000"
+        },
+        {
+          "type": "Tender fee",
+          "value": "₹1,000"
+        }
+      ],
+      "certifications": [
+        "GST REGISTRATION",
+        "PAN"
+      ],
+      "documents_required": [
+        "PAN card",
+        "GST certificate",
+        "Audited financial statements",
+        "Experience certificate",
+        "Technical bid",
+        "Financial bid"
+      ],
+      "deadlines": {
+        "bid_submission_deadline": "12-Nov-2026"
+      },
+      "evaluation_criteria": "Technical evaluation and financial bid comparison",
+      "normalized_requirements": {
+        "minimum_annual_turnover_inr": 5000000,
+        "minimum_experience_months": 24,
+        "location_requirement": "Pune, Maharashtra",
+        "emd_inr": 25000,
+        "tender_fee_inr": 1000,
+        "bid_submission_deadline_iso": "2026-11-12",
+        "certifications": [
+          "GST REGISTRATION",
+          "PAN"
+        ],
+        "documents_required": [
+          "PAN card",
+          "GST certificate",
+          "Audited financial statements",
+          "Experience certificate",
+          "Technical bid",
+          "Financial bid"
+        ]
+      },
+      "evidence": {
+        "minimum_turnover": [
+          "BP-2026-002 Organization: Sample Municipal Corporation Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹50 lakh. Minimum experience of 2 years in web development or software maintenance. Valid GST registration is requir"
+        ],
+        "minimum_experience": [
+          "le Municipal Corporation Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹50 lakh. Minimum experience of 2 years in web development or software maintenance. Valid GST registration is required. Technical specifications: P",
+          "D: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical ev"
+        ],
+        "location_requirement": [
+          "Website Maintenance and Software Development Services Tender ID: BP-2026-002 Organization: Sample Municipal Corporation Service location: Pune, Maharashtra Eligibility: Minimum annual turnover of ₹50 lakh. Minimum experience of 2 years in web development"
+        ],
+        "bid_submission_deadline": [
+          "ed: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical evaluation and financial bid comparison."
+        ],
+        "emd": [
+          "ty updates and technical support. The service provider must meet agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, e"
+        ],
+        "tender_fee": [
+          "technical support. The service provider must meet agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technic",
+          "cal support. The service provider must meet agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technic"
+        ],
+        "certifications": [
+          "inancial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical evaluation and financial bid comparison.",
+          "y: Minimum annual turnover of ₹50 lakh. Minimum experience of 2 years in web development or software maintenance. Valid GST registration is required. Technical specifications: Provide website maintenance, software development, cybersecurity u",
+          "sponse-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last date for sub"
+        ],
+        "documents_required": [
+          "e provider must meet agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. La",
+          "agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last da",
+          "Tender document fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical evaluation and"
+        ],
+        "technical_requirements": [
+          "50 lakh. Minimum experience of 2 years in web development or software maintenance. Valid GST registration is required. Technical specifications: Provide website maintenance, software development, cybersecurity updates and technical support. The ser",
+          "on is required. Technical specifications: Provide website maintenance, software development, cybersecurity updates and technical support. The service provider must meet agreed response-time standards. Financial conditions: EMD: ₹25,000. Tender doc",
+          "ent fee: ₹1,000. Documents required: PAN card, GST registration, audited financial statements, experience certificate, technical bid and financial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical evaluation and financial"
+        ],
+        "evaluation_criteria": [
+          "financial statements, experience certificate, technical bid and financial bid. Last date for submission: 12-Nov-2026. Evaluation criteria: Technical evaluation and financial bid comparison."
+        ]
+      },
+      "warnings": [
+        "Rule-based extraction is a screening aid and may miss tables, footnotes, exceptions, or requirements expressed indirectly.",
+        "Verify every extracted requirement against the original tender, annexures, and latest corrigenda before bidding."
+      ],
+      "review_required": true,
+      "source_metadata": {
+        "file_type": "txt",
+        "page_count": null,
+        "character_count": 825,
+        "sha256": "82e940a02c48d68d58a746bac327ea2fed16de17f336c617a44158f69bdee6d2"
+      },
+      "discovery": {
+        "tender_id": "BP-2026-002",
+        "title": "Website Maintenance and Software Development Services",
+        "organization": "Sample Municipal Corporation",
+        "location": "Pune, Maharashtra",
+        "catalogue_deadline": "2026-11-12",
+        "estimated_value": 1800000,
+        "categories": [
+          "software",
+          "web development",
+          "IT services"
+        ],
+        "source_url": "https://example.gov.in/tenders/BP-2026-002",
+        "relevance_score": 45.5,
+        "matched_terms": [
+          "cybersecurity",
+          "it",
+          "maharashtra",
+          "software",
+          "support"
+        ],
+        "discovery_note": "Matched terms: cybersecurity, it, maharashtra, software, support"
+      },
+      "cross_checks": {
+        "catalogue_vs_document_deadline": {
+          "catalogue_deadline": "2026-11-12",
+          "document_deadline": "2026-11-12",
+          "status": "match"
+        }
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "tender_id": "BP-2026-003",
+      "source_document": "tender_003.txt",
+      "eligibility": {
+        "minimum_turnover": "₹75 lakh",
+        "minimum_experience": "3 years",
+        "location_requirement": "Maharashtra",
+        "other_conditions": []
+      },
+      "technical_requirements": [
+        "Delivery location: Maharashtra",
+        "Technical specifications:",
+        "Delivery and installation are required at the listed facilities."
+      ],
+      "financial_requirements": [
+        {
+          "type": "EMD",
+          "value": "₹20,000"
+        }
+      ],
+      "certifications": [
+        "GST",
+        "PAN"
+      ],
+      "documents_required": [
+        "PAN card",
+        "GST certificate",
+        "Turnover certificate",
+        "Experience certificate",
+        "Company registration certificate"
+      ],
+      "deadlines": {
+        "bid_submission_deadline": "30-Oct-2026"
+      },
+      "evaluation_criteria": null,
+      "normalized_requirements": {
+        "minimum_annual_turnover_inr": 7500000,
+        "minimum_experience_months": 36,
+        "location_requirement": "Maharashtra",
+        "emd_inr": 20000,
+        "tender_fee_inr": null,
+        "bid_submission_deadline_iso": "2026-10-30",
+        "certifications": [
+          "GST",
+          "PAN"
+        ],
+        "documents_required": [
+          "PAN card",
+          "GST certificate",
+          "Turnover certificate",
+          "Experience certificate",
+          "Company registration certificate"
+        ]
+      },
+      "evidence": {
+        "minimum_turnover": [
+          "ID: BP-2026-003 Organization: Sample District Health Office Delivery location: Maharashtra Eligibility: Minimum annual turnover of ₹75 lakh. Minimum experience of 3 years supplying hospital furniture or medical equipment. Technical specifications",
+          "acilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission deadline: 30-Oct-2026."
+        ],
+        "minimum_experience": [
+          "Sample District Health Office Delivery location: Maharashtra Eligibility: Minimum annual turnover of ₹75 lakh. Minimum experience of 3 years supplying hospital furniture or medical equipment. Technical specifications: Furniture must meet applicable",
+          "conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission deadline: 30-Oct-2026."
+        ],
+        "location_requirement": [
+          "TENDER: Supply of Hospital Furniture Tender ID: BP-2026-003 Organization: Sample District Health Office Delivery location: Maharashtra Eligibility: Minimum annual turnover of ₹75 lakh. Minimum experience of 3 years supplying hospital furnit"
+        ],
+        "bid_submission_deadline": [
+          "card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission deadline: 30-Oct-2026."
+        ],
+        "emd": [
+          "et applicable safety standards. Delivery and installation are required at the listed facilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company r",
+          "andards. Delivery and installation are required at the listed facilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company regist"
+        ],
+        "certifications": [
+          "d at the listed facilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission deadline:"
+        ],
+        "documents_required": [
+          "y and installation are required at the listed facilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submis",
+          "re required at the listed facilities. Financial conditions: Earnest Money Deposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission",
+          "eposit (EMD): ₹20,000. Documents required: PAN card, GST certificate, turnover certificate, experience certificate, company registration certificate. Bid submission deadline: 30-Oct-2026."
+        ],
+        "technical_requirements": [
+          "Minimum annual turnover of ₹75 lakh. Minimum experience of 3 years supplying hospital furniture or medical equipment. Technical specifications: Furniture must meet applicable safety standards. Delivery and installation are required at the listed f",
+          "nnual turnover of ₹75 lakh. Minimum experience of 3 years supplying hospital furniture or medical equipment. Technical specifications: Furniture must meet applicable safety standards. Delivery and installation are required at the listed facilities. Fi"
+        ]
+      },
+      "warnings": [
+        "Rule-based extraction is a screening aid and may miss tables, footnotes, exceptions, or requirements expressed indirectly.",
+        "Verify every extracted requirement against the original tender, annexures, and latest corrigenda before bidding."
+      ],
+      "review_required": true,
+      "source_metadata": {
+        "file_type": "txt",
+        "page_count": null,
+        "character_count": 636,
+        "sha256": "9b69292a8a3252d4dff0f76c2c418b55003f151db2f663e102e268d43c02d409"
+      },
+      "discovery": {
+        "tender_id": "BP-2026-003",
+        "title": "Supply of Hospital Furniture",
+        "organization": "Sample District Health Office",
+        "location": "Maharashtra",
+        "catalogue_deadline": "2026-10-30",
+        "estimated_value": 900000,
+        "categories": [
+          "medical furniture",
+          "hospital supplies"
+        ],
+        "source_url": "https://example.gov.in/tenders/BP-2026-003",
+        "relevance_score": 9.1,
+        "matched_terms": [
+          "maharashtra"
+        ],
+        "discovery_note": "Matched terms: maharashtra"
+      },
+      "cross_checks": {
+        "catalogue_vs_document_deadline": {
+          "catalogue_deadline": "2026-10-30",
+          "document_deadline": "2026-10-30",
+          "status": "match"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Discovery uses explainable keyword overlap; relevance is not eligibility.",
+    "Only documents referenced by the local catalogue are processed.",
+    "Requirement extraction is rule-based and requires human verification.",
+    "This workflow does not poll live tender portals or automatically ingest corrigenda."
+  ]
+}

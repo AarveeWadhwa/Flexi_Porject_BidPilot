@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.1",
+  "tender_id": "tender_001",
+  "source_document": "tender_001.txt",
+  "eligibility": {
+    "minimum_turnover": "₹1 crore",
+    "minimum_experience": "3 years",
+    "location_requirement": "Maharashtra",
+    "other_conditions": [
+      "Bidders must have valid GST registration and PAN."
+    ]
+  },
+  "technical_requirements": [
+    "TENDER: Supply and Installation of Computer Equipment",
+    "Technical specifications:",
+    "Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD.",
+    "Networking equipment must support current industry standards.",
+    "Warranty: minimum 3 years onsite support.",
+    "experience certificate, OEM authorization, technical bid, financial bid.",
+    "Evaluation criteria: Technical compliance followed by financial evaluation."
+  ],
+  "financial_requirements": [
+    {
+      "type": "EMD",
+      "value": "₹50,000"
+    },
+    {
+      "type": "Tender fee",
+      "value": "₹2,000"
+    }
+  ],
+  "certifications": [
+    "GST",
+    "GST REGISTRATION",
+    "OEM AUTHORIZATION",
+    "PAN"
+  ],
+  "documents_required": [
+    "PAN card",
+    "GST certificate",
+    "Audited financial statements",
+    "Turnover certificate",
+    "Experience certificate",
+    "OEM authorization",
+    "Technical bid",
+    "Financial bid"
+  ],
+  "deadlines": {
+    "bid_submission_deadline": "05-Nov-2026"
+  },
+  "evaluation_criteria": "Technical compliance followed by financial evaluation",
+  "normalized_requirements": {
+    "minimum_annual_turnover_inr": 10000000,
+    "minimum_experience_months": 36,
+    "location_requirement": "Maharashtra",
+    "emd_inr": 50000,
+    "tender_fee_inr": 2000,
+    "bid_submission_deadline_iso": "2026-11-05",
+    "certifications": [
+      "GST",
+      "GST REGISTRATION",
+      "OEM AUTHORIZATION",
+      "PAN"
+    ],
+    "documents_required": [
+      "PAN card",
+      "GST certificate",
+      "Audited financial statements",
+      "Turnover certificate",
+      "Experience certificate",
+      "OEM authorization",
+      "Technical bid",
+      "Financial bid"
+    ]
+  },
+  "evidence": {
+    "minimum_turnover": [
+      "er ID: BP-2026-001 Organization: Sample State Procurement Department Location: Maharashtra Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minimum relevant experience of 3 years supplying compute",
+      "posit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-"
+    ],
+    "minimum_experience": [
+      "a Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minimum relevant experience of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and",
+      "Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteri"
+    ],
+    "location_requirement": [
+      "Supply and Installation of Computer Equipment Tender ID: BP-2026-001 Organization: Sample State Procurement Department Location: Maharashtra Eligibility: Minimum annual turnover of ₹1 crore during any three of the last five financial years. Minim"
+    ],
+    "bid_submission_deadline": [
+      "tements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+    ],
+    "emd": [
+      "ing equipment must support current industry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turno",
+      "ort current industry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover c"
+    ],
+    "tender_fee": [
+      "ustry standards. Warranty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience"
+    ],
+    "certifications": [
+      "relevant experience of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking e",
+      "upport. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical b"
+    ],
+    "documents_required": [
+      "anty: minimum 3 years onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorizati",
+      "of 3 years supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking equipment must support",
+      "s onsite support. Financial conditions: Earnest Money Deposit (EMD): ₹50,000. Tender fee: ₹2,000. Documents required: PAN card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, t"
+    ],
+    "technical_requirements": [
+      "ears supplying computer hardware to public or private organizations. Bidders must have valid GST registration and PAN. Technical specifications: Supply 100 laptops with minimum 16 GB RAM and 512 GB SSD. Networking equipment must support current ind",
+      "N card, GST certificate, audited financial statements, turnover certificate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financ",
+      "rtificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+    ],
+    "evaluation_criteria": [
+      "ficate, experience certificate, OEM authorization, technical bid, financial bid. Bid submission deadline: 05-Nov-2026. Evaluation criteria: Technical compliance followed by financial evaluation."
+    ]
+  },
+  "warnings": [
+    "Rule-based extraction is a screening aid and may miss tables, footnotes, exceptions, or requirements expressed indirectly.",
+    "Verify every extracted requirement against the original tender, annexures, and latest corrigenda before bidding."
+  ],
+  "review_required": true,
+  "source_metadata": {
+    "file_type": "txt",
+    "page_count": null,
+    "character_count": 961,
+    "sha256": "7592a6595f4926baf8d5bb2e29bc2335d5bfc1f0c1f8e075b2aa1db0fe7b7c61"
+  }
+}
