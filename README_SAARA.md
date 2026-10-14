@@ -21,3 +21,11 @@ python -m unittest discover -s tests -v
 
 ## Important
 This module produces preliminary decision support. It must not represent an unclear or missing value as a definite failure, and it does not replace human review of the tender documents. A missing document is marked missing; it does not automatically mean the company is legally ineligible.
+
+# BidPilot AI — Part 3
+
+Overlay extending Member 2 Parts 1 and 2. Extract at the shared repository root and preserve other members' work.
+
+New integration: `TenderAssessmentPipeline` adapts Member 1's tender-intelligence JSON envelope to Member 2 eligibility/compliance checks and produces a combined report.
+
+Run tests with `python3 -m unittest discover -s tests -v`. See `docs/member2_part3.md`.
