@@ -34,3 +34,17 @@ Overlay for the existing Member 3 files. Extract into the shared repository root
 New/updated capabilities: snapshot change comparison, severity-aware notification payloads, transparent bid analysis, and a human-review checklist.
 
 Run `python3 -m unittest discover -s tests -v` from the repository root. Commit only the intended files on `member3/bid-analysis-monitoring`.
+
+# Member 3 Part 3 Overlay
+
+Extract this ZIP into the repository root, preserving the folder structure. It adds an integrated CLI pipeline, sample JSON inputs, documentation, and tests. It is designed to layer on top of Member 3 Parts 1 and 2.
+
+Run from repository root:
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 -m backend.agents.bid_workspace_agent --assessments examples/assessments.json --current-snapshots examples/current_snapshots.json --previous-snapshots examples/previous_snapshots.json --output outputs/member3_bid_workspace.json
+```
+
+No live portal monitoring or real notification delivery is included.
+
