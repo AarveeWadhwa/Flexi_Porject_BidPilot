@@ -22,10 +22,28 @@ python -m unittest discover -s tests -v
 ## Important
 This module produces preliminary decision support. It must not represent an unclear or missing value as a definite failure, and it does not replace human review of the tender documents. A missing document is marked missing; it does not automatically mean the company is legally ineligible.
 
-# BidPilot AI — Part 3
+Part 3
 
 Overlay extending Member 2 Parts 1 and 2. Extract at the shared repository root and preserve other members' work.
 
 New integration: `TenderAssessmentPipeline` adapts Member 1's tender-intelligence JSON envelope to Member 2 eligibility/compliance checks and produces a combined report.
 
 Run tests with `python3 -m unittest discover -s tests -v`. See `docs/member2_part3.md`.
+
+Part 4 Overlay
+
+This overlay contains the explainable tender-assessment insights implementation.
+
+## Files
+- `backend/services/assessment_insights.py` — assessment insight/summary service.
+- `backend/agents/assessment_insights_agent.py` — agent wrapper for assessment insights.
+- `tests/test_assessment_insights.py` — focused tests.
+
+## Apply
+Copy the files into the matching paths in your existing BidPilot project. Review any differences before overwriting files. From the project root, run:
+
+```bash
+python -m unittest tests.test_assessment_insights -v
+```
+
+This overlay is intended for the existing project; it is not a standalone application. It does not include secrets, database files, or deployment configuration.
